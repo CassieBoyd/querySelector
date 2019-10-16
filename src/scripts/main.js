@@ -12,4 +12,7 @@ replaceText.textContent = "Welcome to the Cassie blog"
 
 
 const important = document.querySelectorAll(".article__header")
-important.classList.add("important")
+important.forEach((tag) => {
+    tag.classList.add("important")
+})
+console.log(important)
